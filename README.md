@@ -31,7 +31,7 @@ require 'commerce'
 
 Commerce.Auth('sk_test_8146250gNZ8gddde480e07ac91c10c2651077176aed27')
 
-products = Commerce.Product:all()
+products = Commerce.Product.all()
 
 ```
 
