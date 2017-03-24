@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "commerce"
-  s.version     = "1.0.0"
+  s.version     = "1.0.1"
   s.authors     = ["Chec Commerce, Inc."]
   s.email       = ["hello+sdk@commercejs.com"]
   s.homepage    = "https://github.com/chec"

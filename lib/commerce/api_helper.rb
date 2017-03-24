@@ -69,7 +69,7 @@ module Commerce
 
       # get the http protocol match
       protocol = matches[1]
-
+      
       # check if parameters exist
       index = url.index('?')
 
@@ -82,7 +82,7 @@ module Commerce
 
       # return processed url
       return protocol + query  + parameters
-    end
+    end	
 
     # Parses JSON string.
     # @param [String] A JSON string.
@@ -101,7 +101,7 @@ module Commerce
       encoded = Hash.new
       form_parameters.each do |key, value|
         encoded.merge!(APIHelper.form_encode value, key)
-      end
+      end 
       return encoded
     end
 
@@ -116,10 +116,10 @@ module Commerce
       if obj.kind_of? BaseModel
         obj = obj.to_hash
       end
-
+      
       # Create a form encoded hash for this object.
       if obj == nil
-        nil
+        nil         
       elsif obj.instance_of? Array
         obj.each_with_index do |value, index|
           retval.merge!(APIHelper.form_encode(value, instance_name + "[" + index.to_s + "]"))

@@ -203,6 +203,7 @@ module Commerce
 
       _request = @@http_client.PUT _query_url, parameters: _parameters
 
+
       CustomHeaderAuth.apply(_request)
 
       _request.headers = @@global_headers.clone.merge(_request.headers)
